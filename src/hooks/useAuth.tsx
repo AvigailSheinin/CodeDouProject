@@ -69,12 +69,14 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
 
   const checkAdminStatus = async (userId: string) => {
     try {
-      const { data } = await supabase
+      console.log('Checking admin status for user:', userId);
+      const { data, error } = await supabase
         .from('user_profiles')
         .select('role')
         .eq('id', userId)
         .maybeSingle();
       
+      console.log('Admin check result:', { data, error });
       setIsAdmin(data?.role === 'admin');
     } catch (error) {
       console.error('Error checking admin status:', error);
