@@ -1,6 +1,6 @@
 # Welcome to your Lovable project
 
-## Project info
+## Project Info
 
 **URL**: https://lovable.dev/projects/a8dbdf73-647b-405c-ad04-4b04bfc6c4ae
 
@@ -59,15 +59,79 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+- Supabase
 
-## How can I deploy this project?
+## Getting Started
 
-Simply open [Lovable](https://lovable.dev/projects/a8dbdf73-647b-405c-ad04-4b04bfc6c4ae) and click on Share -> Publish.
+To work locally:
 
-## Can I connect a custom domain to my Lovable project?
+1. Clone the repository:
+    ```sh
+    git clone <YOUR_GIT_URL>
+    cd <YOUR_PROJECT_NAME>
+    ```
+2. Install dependencies:
+    ```sh
+    npm i
+    ```
+3. Start the development server:
+    ```sh
+    npm run dev
+    ```
 
-Yes, you can!
+## Editing Code
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+You can edit your code using:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- **Lovable**: Visit [Lovable Project](https://lovable.dev/projects/a8dbdf73-647b-405c-ad04-4b04bfc6c4ae) and prompt changes. Changes are committed automatically.
+- **Your IDE**: Clone the repo, edit locally, and push changes.
+- **GitHub**: Edit files directly in the GitHub UI.
+- **GitHub Codespaces**: Launch a codespace for cloud-based editing.
+
+## Deployment
+
+To deploy, open [Lovable](https://lovable.dev/projects/a8dbdf73-647b-405c-ad04-4b04bfc6c4ae), click Share → Publish.
+
+## Custom Domain
+
+You can connect a custom domain:
+
+1. Go to Project > Settings > Domains.
+2. Click Connect Domain.
+
+[Step-by-step guide](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+## Project Structure
+
+```
+public/
+  favicon.ico
+  placeholder.svg
+  robots.txt
+src/
+  App.css
+  App.tsx
+  index.css
+  main.tsx
+  vite-env.d.ts
+  components/
+    Navigation.tsx
+    ui/
+  hooks/
+    use-mobile.tsx
+    use-toast.ts
+    useAuth.tsx
+    useCompanyInfo.tsx
+  integrations/
+    supabase/
+  lib/
+    utils.ts
+  pages/
+supabase/
+  config.toml
+  migrations/
+```
+
+## License
+
+See [LICENSE](LICENSE) for details.
